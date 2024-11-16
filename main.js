@@ -55,3 +55,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+// Filtrar libros por categoría
+function filtrarPorCategoria(categoria) {
+    const librosFiltrados = libros.filter(libro => libro.categoria === categoria);
+    mostrarLibros(librosFiltrados);
+}
+
+// Mostrar los libros filtrados
+function mostrarLibros(libros) {
+    const contenedorLibros = document.getElementById('libros-container');
+    contenedorLibros.innerHTML = "";  // Limpiar contenedor antes de mostrar nuevos libros
+
+    libros.forEach(libro => {
+        const libroHTML = `
+            <div class="libro">
+                <img src="${libro.imagen}" alt="${libro.titulo}">
+                <h3>${libro.titulo}</h3>
+                <p>${libro.descripcionCorta}</p>
+                <a href="${libro.enlaceDescarga}" class="boton-descargar">Descargar</a>
+            </div>
+        `;
+        contenedorLibros.innerHTML += libroHTML;
+    });
+}
+
+// Mostrar todos los libros al cargar la página
+window.onload = () => mostrarLibros(libros);

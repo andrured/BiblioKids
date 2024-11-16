@@ -16,23 +16,43 @@ body {
 
 
 /* Header */
+/* Header */
 header {
-    background: linear-gradient(90deg, #9b6bc9, #8e85c9);    padding: 0.2px;
+    background: linear-gradient(90deg, #9b6bc9, #8e85c9);
+    padding: 10px 20px;
     text-align: center;
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ajusta si hay más elementos en el header */
-    padding: 10px 20px;
+    justify-content: space-between; /* Asegura que los elementos se distribuyan correctamente */
 }
 
+/* Estilo del logo */
+.logo {
+    max-width: 150px; /* Ajusta el tamaño del logo */
+    order: -1; /* Hace que el logo se quede primero en el layout */
+}
+
+/* Título */
 
 
-h1 {
+/* Estilo de los subtítulos */
+header h2 {
     color: #fff;
     font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
 }
+
+/* Animación de escribir */
+
+
 
 /* Biblioteca */
 .biblioteca-container {
@@ -528,7 +548,7 @@ html, body {
     flex: 1; /* Hace que la biblioteca ocupe el espacio restante */
     padding: 20px;
     overflow-y: auto; /* Agrega scroll vertical si el contenido es muy largo */
-    background-color: #f0f7ff; /* Fondo claro para diferenciar la biblioteca */
+    background-color: #ffffff; /* Fondo claro para diferenciar la biblioteca */
 }
 
 /* Estilos para el banner del eslogan */
