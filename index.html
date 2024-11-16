@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual Infantil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pantalla de bienvenida -->
+  <div id="welcome-screen" class="welcome-screen">
+    <h1>Diversión y conocimiento al alcance de un click</h1>
+    <button id="enter-button">Entrar</button>
+  </div>
+
+  <!-- Página principal -->
+  <div id="main-page" class="main-page hidden">
+    <header>
+        <h1>Mundos Mágicos</h1>
+    </header>
+
+    <div class="biblioteca-container" id="biblioteca">
+        <!-- Los libros se agregarán dinámicamente con JavaScript -->
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-resumen"></p>
+            <button class="boton-descarga" id="modal-descarga">Descargar Libro</button>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="libros.js"></script>
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

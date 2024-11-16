@@ -1,0 +1,209 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f7ff;
+    /* overflow: hidden; */ /* Eliminar esta línea para permitir el scroll */
+}
+
+
+/* Header */
+header {
+    background-color: #1f2833;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Biblioteca */
+.biblioteca-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.libro {
+    perspective: 1500px;
+    height: 300px;
+}
+
+.libro-interior {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.libro:hover .libro-interior {
+    transform: rotateY(180deg);
+}
+
+.libro-frente, .libro-dorso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.libro-frente img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.libro-dorso {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.libro-dorso h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.libro-dorso p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.cerrar-modal {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #ff9ecd;
+}
+
+.boton-descarga {
+    background-color: #ff9ecd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.boton-descarga:hover {
+    background-color: #ff7eb8;
+}
+
+/* Pantalla de bienvenida */
+.welcome-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2c3e50, #607d8b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    z-index: 10000;
+    animation: fade-in 1.5s ease-in-out;
+}
+
+.welcome-screen h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.welcome-screen button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #ff9ecd;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.welcome-screen button:hover {
+    transform: scale(1.1);
+    background: #e91e63;
+}
+
+/* Animaciones */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* Ocultar la pantalla principal inicialmente */
+.main-page.hidden {
+    display: none;
+}
+
+/* Página principal */
+.main-page {
+    padding: 20px;
+    text-align: center;
+}
