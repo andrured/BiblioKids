@@ -158,7 +158,7 @@ const libros = [
         descripcionCorta: "Una historia sobre inclusión",
         resumenLargo: "Cuadradito quiere jugar con sus amigos redondos pero no puede entrar por la puerta redonda. Una historia sobre adaptación e inclusión.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/por-cuatro-esquinas.pdf"
+        enlaceDescarga: "libros/por-cuatro-esquinitas.pdf"
     },
     {
         id: 17,

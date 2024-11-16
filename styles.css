@@ -698,27 +698,3 @@ html, body {
     }
 }
 
-/* Estilos del botón que abre la barra lateral */
-.toggle-btn {
-    display: none; /* Inicialmente, el botón está oculto */
-    position: fixed; 
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    background: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 1001; /* Asegura que el botón esté por encima de otros elementos */
-}
-
-/* Media Query para pantallas móviles */
-@media (max-width: 768px) {
-    .barra-lateral {
-        left: -250px; /* Barra lateral oculta en dispositivos pequeños */
-    }
-
-    .toggle-btn {
-        display: block; /* Muestra el botón en dispositivos pequeños */
-    }
-}
