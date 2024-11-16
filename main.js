@@ -82,3 +82,15 @@ function mostrarLibros(libros) {
 
 // Mostrar todos los libros al cargar la página
 window.onload = () => mostrarLibros(libros);
+
+
+const toggleBtn = document.getElementById("toggle-btn");
+    const barraLateral = document.getElementById("barra-lateral");
+
+    toggleBtn.addEventListener("click", () => {
+        if (barraLateral.style.left === "-250px") {
+            barraLateral.style.left = "0"; /* Desliza la barra lateral */
+        } else {
+            barraLateral.style.left = "-250px"; /* Vuelve a ocultarla */
+        }
+    });
