@@ -629,3 +629,71 @@ html, body {
 
 /*estilos responsive*/
 
+/* Para pantallas pequeñas, como móviles */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Cambiar la dirección del flex para que los elementos se apilen verticalmente */
+    }
+
+    .barra-lateral {
+        width: 100%; /* La barra lateral ocupa todo el ancho en dispositivos pequeños */
+        height: auto; /* Deja que la altura se ajuste al contenido */
+    }
+
+    .biblioteca-container {
+        grid-template-columns: 1fr; /* Los libros se apilan en una columna */
+        gap: 20px; /* Reduce el espacio entre los elementos */
+    }
+
+    header {
+        flex-direction: column; /* Hace que el logo y el título se apilen verticalmente */
+        padding: 20px;
+    }
+
+    header h2 {
+        font-size: 1.8em; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .logo {
+        max-width: 100px; /* Ajusta el tamaño del logo en pantallas pequeñas */
+    }
+
+    /* Ajustar la barra lateral en pantallas más pequeñas */
+    .barra-lateral .logo-eslogan {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-box {
+        flex-direction: column; /* Apilar el input y el botón de búsqueda */
+        width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    }
+
+    .search-box input {
+        width: 100%; /* Asegura que el input ocupe todo el ancho */
+        margin-bottom: 10px;
+    }
+
+    .search-box button {
+        width: 100%; /* El botón de búsqueda también ocupa todo el ancho */
+    }
+}
+
+/* Para pantallas aún más pequeñas, como teléfonos pequeños */
+@media (max-width: 480px) {
+    header h2 {
+        font-size: 1.5em; /* Reduce más el tamaño de la fuente */
+    }
+
+    .logo {
+        max-width: 80px; /* Logo más pequeño */
+    }
+
+    .barra-lateral {
+        padding-top: 20px; /* Reduce el padding superior */
+    }
+
+    .biblioteca-container {
+        gap: 15px; /* Reduce el espacio entre los libros */
+    }
+}
