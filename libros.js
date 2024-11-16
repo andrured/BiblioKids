@@ -17,7 +17,7 @@ const libros = [
         imagen: "img/portada2.png",
         descripcionCorta: "Una oruga que come y come hasta transformarse",
         resumenLargo: "Una pequeña oruga come diferentes alimentos durante una semana, creciendo más y más, hasta que finalmente se convierte en una hermosa mariposa. Una historia sobre transformación y números.",
-        edadRecomendada: "4-6 años",
+        edadRecomendada: "4-7 años",
         enlaceDescarga: "libros/la-oruga-muy-hambrienta_compress.pdf "
     },
     {
