@@ -582,5 +582,50 @@ html, body {
 }
 
 
+/* Media Queries */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Cambia el diseño a columna en pantallas pequeñas */
+    }
+
+    .biblioteca-container {
+        grid-template-columns: 1fr; /* Cambia la grid a una sola columna en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    header h2 {
+        font-size: 1.8em; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .barra-lateral {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+    .barra-lateral .logo-eslogan {
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        gap: 5px;
+    }
+
+    .search-box input, .search-box button {
+        width: 100%; /* Hacer que los elementos del buscador ocupen todo el ancho */
+    }
+
+    .main-page {
+        padding: 15px; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
 /*estilos responsive*/
 
