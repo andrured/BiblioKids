@@ -138,7 +138,7 @@ const libros = [
         descripcionCorta: "Una cebra que pierde sus rayas",
         resumenLargo: "La cebra Camila pierde sus rayas con el viento y diferentes amigos la ayudan a recuperarlas. Una historia sobre amistad y solidaridad.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/la-cebra-camila.pdf"
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const libros = [
         descripcionCorta: "Un niño aprende a vivir con sus diferencias",
         resumenLargo: "Lorenzo arrastra siempre un cazo que le complica la vida, pero aprende a manejarlo con ayuda. Una metáfora sobre superar las dificultades.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/el-cazo-de-lorenzo.pdf"
     },
     {
         id: 16,
@@ -158,7 +158,7 @@ const libros = [
         descripcionCorta: "Una historia sobre inclusión",
         resumenLargo: "Cuadradito quiere jugar con sus amigos redondos pero no puede entrar por la puerta redonda. Una historia sobre adaptación e inclusión.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/por-cuatro-esquinas.pdf"
     },
     {
         id: 17,
@@ -168,17 +168,17 @@ const libros = [
         descripcionCorta: "Una niña descubre su talento artístico",
         resumenLargo: "Vashti piensa que no sabe dibujar, hasta que su profesora la anima a hacer un simple punto. Una historia sobre creatividad y confianza.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/el-punto.pdf"
     },
     {
         id: 18,
-        titulo: "¿Qué Hace un Cocodrilo por la Noche?",
-        autor: "Kathrin Kiss",
-        imagen: "img/portada17.png",
-        descripcionCorta: "Un cocodrilo con insomnio",
-        resumenLargo: "Un cocodrilo no puede dormir y prueba diferentes actividades nocturnas. Una historia divertida sobre la hora de dormir.",
-        edadRecomendada: "4-6 años",
-        enlaceDescarga: "libros/.pdf"
+        titulo: "¿A Qué Sabe la Luna?",
+        autor: "Michael Grejniec",
+        imagen: "img/portada5.png",
+        descripcionCorta: "Animales intentan alcanzar la luna",
+        resumenLargo: "Varios animales se apilan uno encima de otro para intentar alcanzar la luna y probar un pedacito. Una historia sobre cooperación y perseverancia.",
+        edadRecomendada: "4-7 años",
+        enlaceDescarga: "libros/a-que-sabe-la-luna.pdf"
     },
     {
         id: 19,
@@ -188,7 +188,7 @@ const libros = [
         descripcionCorta: "Una niña lleva fruta a su amiga",
         resumenLargo: "Nandi lleva una cesta de frutas a su amiga Tindi, pero varios animales van tomando las frutas por el camino. Una historia sobre sorpresas.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/la-sorpresa-de-nandi.pdf"
     },
     {
         id: 20,
@@ -198,6 +198,6 @@ const libros = [
         descripcionCorta: "Una elefanta que rompe estereotipos",
         resumenLargo: "Margarita es una elefanta que no quiere ser rosa como las demás y prefiere jugar en el barro. Una historia sobre igualdad y libertad.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "libros/.pdf"
+        enlaceDescarga: "libros/rosa-caramelo.pdf"
     }
 ];

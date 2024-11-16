@@ -17,9 +17,13 @@ body {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #78447e, #736ac2, #b3d1e1); /* Degradado entre morado y azul clarito */
-    padding: 0.2px;
+    background: linear-gradient(90deg, #9b6bc9, #8e85c9);    padding: 0.2px;
     text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta si hay más elementos en el header */
+    padding: 10px 20px;
 }
 
 
@@ -263,38 +267,43 @@ html, body {
 
 /* Estilo para el logo */
 .logo {
-    width: 100px; /* Ajusta el tamaño del logo */
-    height: 100px; /* Ajusta el tamaño del logo */
-    margin-right: 10px; /* Espacio entre el logo y el eslogan */
+    width: 120px; /* Tamaño del logo */
+    height: auto; /* Mantener proporción */ /* Espacio entre el logo y el eslogan */
 }
 
 /* Estilo para el eslogan */
 .eslogan {
-    font-size: 18px;
-    font-weight: 300; /* Ligero para que sea sutil */
-    color: #555; /* Color gris suave */
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #555;
+    text-align: center; /* Color gris suave */
 }
 
 /* Estilos para la barra lateral */
 /* Barra Lateral */
+/* Barra Lateral */
 .barra-lateral {
     width: 250px;
     height: 100vh;
-    background: linear-gradient(135deg, #9d6acf, #6666ff, #4b0082);
-    padding-top: 50px;  /* Eliminar o reducir el padding-top */
+    background: #f3f4f8; /* Fondo más suave */
+    padding-top: 50px;
     padding-right: 15px;
-    color: #fff;
+    color: #333; /* Texto más oscuro para mejor legibilidad */
     font-family: Arial, sans-serif;
     overflow-y: auto;
-    
+    margin-top: 20px;
 }
-
-
 
 /* Estilo para el logo y eslogan en la barra lateral */
 .barra-lateral .logo-eslogan {
     text-align: center;
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el logo y el eslogan */
+    flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+    padding: 10px;
 }
 
 .barra-lateral .logo-eslogan .logo {
@@ -310,7 +319,7 @@ html, body {
 .nav-title {
     font-size: 18px;
     font-weight: bold;
-    color: #ecf0f1;
+    color: #7d6bb5; /* Color morado más oscuro para títulos */
     margin-bottom: 10px;
 }
 
@@ -330,15 +339,16 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 12px 20px;
-    background-color: #5c95ce;
-    color: #ecf0f1;
+    background-color: #a691e6; /* Morado suave para los botones */
+    color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    background-color: #16a085;
+    background-color: #8e85c9; /* Morado más oscuro al hover */
+    transform: scale(1.02);
 }
 
 .nav-link i {
@@ -347,7 +357,7 @@ html, body {
 
 /* Estilo para los contadores de categorías */
 .category-badge {
-    background-color: #e74c3c;
+    background-color: #9b6bc9; /* Morado más vibrante para los badges */
     color: #fff;
     font-size: 12px;
     padding: 4px 8px;
@@ -360,35 +370,37 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #34495e;
+    background-color: #fff; /* Fondo blanco para el buscador */
     padding: 10px 15px;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .search-box input {
     width: 180px;
     padding: 8px;
-    border: none;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     outline: none;
 }
 
 .search-box button {
-    background-color: #16a085;
+    background-color: #9b6bc9; /* Morado para el botón de búsqueda */
     color: #fff;
     border: none;
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .search-box button:hover {
-    background-color: #1abc9c;
+    background-color: #8e85c9;
+    transform: scale(1.05);
 }
 
-/* Estilo para la barra lateral oculta (cuando está desactivada) */
+/* Estilo para la barra lateral oculta */
 .hidden {
     display: none;
 }
@@ -445,6 +457,7 @@ html, body {
     gap: 30px;
     overflow: auto; /* Permite desplazamiento si hay contenido extra */
     background-color: #f0f7ff;
+    margin-top: 20px;
   }
   
   /* Estilos generales */
@@ -517,4 +530,37 @@ html, body {
     overflow-y: auto; /* Agrega scroll vertical si el contenido es muy largo */
     background-color: #f0f7ff; /* Fondo claro para diferenciar la biblioteca */
 }
+
+/* Estilos para el banner del eslogan */
+.eslogan-banner {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.eslogan {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        #FF69B4,
+        #4169E1,
+        #9370DB,
+        #FF69B4
+    );
+    background-size: 300% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradient 6s linear infinite;
+    font-family: 'Pacifico', cursive; /* Cambia a la fuente Pacifico */
+}
+
+
+/*estilos responsive*/
 
