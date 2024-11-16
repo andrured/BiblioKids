@@ -8,16 +8,21 @@
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: #f0f7ff;
-    /* overflow: hidden; */ /* Eliminar esta línea para permitir el scroll */
+    display: flex; /* Cambia el diseño a flex para dividir la barra lateral y la biblioteca */
+    flex-direction: row; /* Asegura que los elementos estén uno al lado del otro */
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Header */
 header {
-    background-color: #1f2833;
-    padding: 20px;
+    background: linear-gradient(135deg, #78447e, #736ac2, #b3d1e1); /* Degradado entre morado y azul clarito */
+    padding: 0.2px;
     text-align: center;
 }
+
+
 
 h1 {
     color: #fff;
@@ -145,7 +150,7 @@ h1 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #2c3e50, #607d8b);
+    background: linear-gradient(135deg, #cf9fff, #6666ff, #4b0082);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,6 +182,38 @@ h1 {
     transform: scale(1.1);
     background: #e91e63;
 }
+/*animacines de boton welcome*/
+
+#enter-button {
+    padding: 10px 20px;
+    background-color: #78447e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    animation: jump 1.5s ease-in-out infinite; /* Añadimos la animación */
+}
+
+/* Definir la animación "jump" */
+@keyframes jump {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    30% {
+        transform: translateY(-10px); /* Subir un poco */
+    }
+    50% {
+        transform: translateY(0); /* Vuelve a la posición inicial */
+    }
+    70% {
+        transform: translateY(-10px); /* Subir un poco más */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve a la posición inicial */
+    }
+}
+
 
 /* Animaciones */
 @keyframes fade-in {
@@ -203,7 +240,281 @@ h1 {
 }
 
 /* Página principal */
-.main-page {
-    padding: 20px;
-    text-align: center;
+html, body {
+    margin: 0; /* Elimina márgenes del body */
+    padding: 0; /* Elimina paddings del body */
+    height: 100%; /* Asegura que ocupen toda la altura */
 }
+
+.main-page {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: #f0f0f0; /* Fondo opcional */
+}
+
+/* Estilo para el contenedor del logo y eslogan */
+.logo-eslogan {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre el logo y el título */
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: 100px; /* Ajusta el tamaño del logo */
+    margin-right: 10px; /* Espacio entre el logo y el eslogan */
+}
+
+/* Estilo para el eslogan */
+.eslogan {
+    font-size: 18px;
+    font-weight: 300; /* Ligero para que sea sutil */
+    color: #555; /* Color gris suave */
+}
+
+/* Estilos para la barra lateral */
+/* Barra Lateral */
+.barra-lateral {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(135deg, #9d6acf, #6666ff, #4b0082);
+    padding-top: 50px;  /* Eliminar o reducir el padding-top */
+    padding-right: 15px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    
+}
+
+
+
+/* Estilo para el logo y eslogan en la barra lateral */
+.barra-lateral .logo-eslogan {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.barra-lateral .logo-eslogan .logo {
+    width: 150px;
+}
+
+/* Estilo para las categorías y títulos */
+.nav-section {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las listas de navegación */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: #5c95ce;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #16a085;
+}
+
+.nav-link i {
+    margin-right: 10px;
+}
+
+/* Estilo para los contadores de categorías */
+.category-badge {
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+/* Estilo para el buscador */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.search-box input {
+    width: 180px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #16a085;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #1abc9c;
+}
+
+/* Estilo para la barra lateral oculta (cuando está desactivada) */
+.hidden {
+    display: none;
+}
+
+  
+  /* Estilo para el input de búsqueda */
+ /* Estilo para el contenedor de búsqueda (li) */
+.search-container {
+    display: flex; /* Utilizamos flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente el input y el botón */
+    gap: 10px; /* Espacio entre el input y el botón */
+    max-width: 100%; /* Asegura que el contenedor no se salga */
+    flex-wrap: nowrap; /* Impide que los elementos se muevan a una nueva línea */
+    overflow: hidden; /* Evita el desbordamiento del contenedor */
+    justify-content: flex-start; /* Asegura que todo esté alineado a la izquierda */
+  }
+  
+  /* Estilo para el input de búsqueda */
+  #search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1; /* El input ocupa el máximo espacio posible */
+    min-width: 120px; /* Tamaño mínimo para el input */
+    max-width: 300px; /* Ancho máximo para evitar que el input se haga demasiado grande */
+    width: 100%; /* Hace que el input ocupe el 100% del espacio disponible */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  /* Estilo para el botón de búsqueda */
+  #search-button {
+    padding: 8px 12px;
+    background-color: #4083b9;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Evita que el texto en el botón se ajuste */
+  }
+  
+  /* Espacio entre el icono y el texto en el botón */
+  #search-button i {
+    margin-right: 5px;
+  }
+  
+  /* Estilo para el contenedor de los libros */
+  .biblioteca-container {
+    lex: 1; /* Ocupa el resto del espacio disponible */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño de cuadrícula para los libros */
+    gap: 30px;
+    overflow: auto; /* Permite desplazamiento si hay contenido extra */
+    background-color: #f0f7ff;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal {
+    display: none;
+    /* Ajusta los estilos del modal si es necesario */
+  }
+  
+  h1 {
+    color: #fff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-style: italic; /* Fuente cursiva */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta lo que no se ha mostrado aún */
+    width: 0; /* Inicialmente, el ancho es 0 */
+    transform: translateX(-50%); /* Centra el texto inicialmente */
+    left: 50%; /* Coloca el texto en el centro de la pantalla */
+    position: absolute; /* Necesario para mover el texto */
+    animation: escribir 2s steps(30) 1s forwards, centrar 0.2s 1s forwards; /* Llama a la animación de escritura y centrado */
+}
+
+/* Animación para simular que se escribe */
+@keyframes escribir {
+    from {
+        width: 0; /* Empieza con el texto oculto */
+    }
+    to {
+        width: 100%; /* Muestra el texto completamente */
+    }
+}
+
+/* Animación para centrar el texto más rápidamente */
+@keyframes centrar {
+    from {
+        transform: translateX(-50%); /* Empieza centrado */
+        left: 50%;
+    }
+    to {
+        transform: translateX(-50%); /* Se asegura de que se mantenga centrado */
+        left: 50%;
+    }
+}
+/* Contenedor Principal */
+.contenedor-principal {
+    display: flex; /* Utilizamos flexbox para alinear la barra lateral y el contenido principal */
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+/* Ajuste de la barra lateral dentro del contenedor */
+.contenedor-principal .barra-lateral {
+    flex: 0 0 250px; /* Define el ancho fijo de la barra lateral */
+    height: 100%; /* Hace que la barra lateral ocupe toda la altura del contenedor */
+}
+
+/* Ajuste de la biblioteca dentro del contenedor */
+.contenedor-principal .biblioteca-container {
+    flex: 1; /* Hace que la biblioteca ocupe el espacio restante */
+    padding: 20px;
+    overflow-y: auto; /* Agrega scroll vertical si el contenido es muy largo */
+    background-color: #f0f7ff; /* Fondo claro para diferenciar la biblioteca */
+}
+

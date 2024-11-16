@@ -53,3 +53,5 @@ window.onclick = function(event) {
 document.addEventListener('DOMContentLoaded', function() {
     crearTarjetasLibros();
 });
+
+

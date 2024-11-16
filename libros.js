@@ -17,8 +17,8 @@ const libros = [
         imagen: "img/portada2.png",
         descripcionCorta: "Una oruga que come y come hasta transformarse",
         resumenLargo: "Una pequeña oruga come diferentes alimentos durante una semana, creciendo más y más, hasta que finalmente se convierte en una hermosa mariposa. Una historia sobre transformación y números.",
-        edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/la-oruga-muy-hambrienta_compress.pdf "
+        edadRecomendada: "4-6 años",
+        enlaceDescarga: "libros/la-oruga-muy-hambrienta.pdf"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const libros = [
         descripcionCorta: "La aventura de Max en el país de los monstruos",
         resumenLargo: "Max es enviado a la cama sin cenar y emprende un viaje imaginario al país de los monstruos, donde se convierte en el rey. Una historia sobre imaginación y el amor familiar.",
         edadRecomendada: "4-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/donde-viven-los-monstruos.pdf"
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const libros = [
         descripcionCorta: "Un pez aprende a compartir sus escamas brillantes",
         resumenLargo: "El pez más hermoso del océano aprende que compartir y hacer amigos es más importante que ser el más bonito. Una historia sobre generosidad y amistad.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/el-pez-arcoiris.pdf"
     },
     {
         id: 5,
@@ -48,7 +48,7 @@ const libros = [
         descripcionCorta: "Animales intentan alcanzar la luna",
         resumenLargo: "Varios animales se apilan uno encima de otro para intentar alcanzar la luna y probar un pedacito. Una historia sobre cooperación y perseverancia.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "libros/a-que-sabe-la-luna-pdf_compress.pdf"
+        enlaceDescarga: "libros/a-que-sabe-la-luna.pdf"
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const libros = [
         descripcionCorta: "Un monstruo aprende sobre las emociones",
         resumenLargo: "Un monstruo está confundido porque ha mezclado todas sus emociones. Con ayuda, aprenderá a identificar y organizar sus sentimientos por colores.",
         edadRecomendada: "4-6 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/el-monstruo-de-colores.pdf"
     },
     {
         id: 7,
@@ -68,7 +68,7 @@ const libros = [
         descripcionCorta: "Un ratón poeta que recolecta rayos de sol",
         resumenLargo: "Mientras otros ratones recolectan comida para el invierno, Frederick recolecta rayos de sol, colores y palabras. Una historia sobre el valor del arte y la poesía.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/frederick.pdf"
     },
     {
         id: 8,
@@ -78,7 +78,7 @@ const libros = [
         descripcionCorta: "Una vaca diferente que busca aventuras",
         resumenLargo: "Tina es una vaca curiosa que quiere explorar el mundo y hacer cosas diferentes, como subirse a los árboles. Una historia sobre ser único y seguir tus sueños.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/la-vaca-que-se-subio-a-in-arbol.pdf"
     },
     {
         id: 9,
@@ -88,7 +88,7 @@ const libros = [
         descripcionCorta: "Los crayones de Duncan están descontentos",
         resumenLargo: "Duncan encuentra cartas de sus crayones quejándose de cómo los usa. Una historia divertida sobre creatividad y pensar fuera de la caja.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/el-dia-que-los-crayones-renunciaron.pdf"
     },
     {
         id: 10,
@@ -98,7 +98,7 @@ const libros = [
         descripcionCorta: "Una oruga muy hambrienta come de todo",
         resumenLargo: "Una oruga recién nacida come diferentes alimentos cada día de la semana, hasta que finalmente se transforma en una hermosa mariposa.",
         edadRecomendada: "4-6 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/la-oruga-muy-hambrienta.pdf"
     },
     {
         id: 11,
@@ -108,7 +108,7 @@ const libros = [
         descripcionCorta: "Un elefante de colores que es diferente",
         resumenLargo: "Elmer es un elefante de colores que aprende que ser diferente es lo que lo hace especial. Una historia sobre diversidad y aceptación.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/elmer-david-mckee.pdf"
     },
     {
         id: 12,
@@ -118,7 +118,7 @@ const libros = [
         descripcionCorta: "Una historia sobre aceptar las diferencias",
         resumenLargo: "Lolo y Rita son muy diferentes y a veces eso les causa problemas, pero aprenden a quererse tal como son. Una historia sobre amor y aceptación.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/te-quiero-casi-siempre.pdf"
     },
     {
         id: 13,
@@ -128,7 +128,7 @@ const libros = [
         descripcionCorta: "Un león enamorado aprende a escribir",
         resumenLargo: "Un león se enamora de una leona que ama los libros y decide aprender a escribir para conquistarla. Una historia sobre superación y amor.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/el-leon-que-no-sabia-escribir.pdf"
     },
     {
         id: 14,
@@ -138,7 +138,7 @@ const libros = [
         descripcionCorta: "Una cebra que pierde sus rayas",
         resumenLargo: "La cebra Camila pierde sus rayas con el viento y diferentes amigos la ayudan a recuperarlas. Una historia sobre amistad y solidaridad.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 15,
@@ -148,7 +148,7 @@ const libros = [
         descripcionCorta: "Un niño aprende a vivir con sus diferencias",
         resumenLargo: "Lorenzo arrastra siempre un cazo que le complica la vida, pero aprende a manejarlo con ayuda. Una metáfora sobre superar las dificultades.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 16,
@@ -158,7 +158,7 @@ const libros = [
         descripcionCorta: "Una historia sobre inclusión",
         resumenLargo: "Cuadradito quiere jugar con sus amigos redondos pero no puede entrar por la puerta redonda. Una historia sobre adaptación e inclusión.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 17,
@@ -168,7 +168,7 @@ const libros = [
         descripcionCorta: "Una niña descubre su talento artístico",
         resumenLargo: "Vashti piensa que no sabe dibujar, hasta que su profesora la anima a hacer un simple punto. Una historia sobre creatividad y confianza.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 18,
@@ -178,7 +178,7 @@ const libros = [
         descripcionCorta: "Un cocodrilo con insomnio",
         resumenLargo: "Un cocodrilo no puede dormir y prueba diferentes actividades nocturnas. Una historia divertida sobre la hora de dormir.",
         edadRecomendada: "4-6 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 19,
@@ -188,7 +188,7 @@ const libros = [
         descripcionCorta: "Una niña lleva fruta a su amiga",
         resumenLargo: "Nandi lleva una cesta de frutas a su amiga Tindi, pero varios animales van tomando las frutas por el camino. Una historia sobre sorpresas.",
         edadRecomendada: "4-7 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     },
     {
         id: 20,
@@ -198,6 +198,6 @@ const libros = [
         descripcionCorta: "Una elefanta que rompe estereotipos",
         resumenLargo: "Margarita es una elefanta que no quiere ser rosa como las demás y prefiere jugar en el barro. Una historia sobre igualdad y libertad.",
         edadRecomendada: "5-8 años",
-        enlaceDescarga: "#"
+        enlaceDescarga: "libros/.pdf"
     }
 ];

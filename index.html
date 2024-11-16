@@ -1,42 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biblioteca Virtual Infantil</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual Infantil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Pantalla de bienvenida -->
-  <div id="welcome-screen" class="welcome-screen">
-    <h1>Diversión y conocimiento al alcance de un click</h1>
-    <button id="enter-button">Entrar</button>
-  </div>
-
-  <!-- Página principal -->
-  <div id="main-page" class="main-page hidden">
-    <header>
-        <h1>Mundos Mágicos</h1>
-    </header>
-
-    <div class="biblioteca-container" id="biblioteca">
-        <!-- Los libros se agregarán dinámicamente con JavaScript -->
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen" class="welcome-screen">
+        <img style="height: 300px;" src="img/logo.png" alt="Logo">
+        <button id="enter-button">Entrar</button>
     </div>
 
-    <!-- Modal -->
-    <div id="modal" class="modal">
-        <div class="modal-contenido">
-            <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
-            <h2 id="modal-titulo"></h2>
-            <p id="modal-resumen"></p>
-            <button class="boton-descarga" id="modal-descarga">Descargar Libro</button>
+    <!-- Página principal -->
+    <div id="main-page" class="main-page hidden">
+        <header class="header">
+            <div class="logo-eslogan">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <h1>Rincón mágico del conocimiento</h1>
+            </div>
+
+        </header>
+
+        <div class="contenedor-principal">
+            <!-- Barra lateral de navegación -->
+            <aside class="barra-lateral">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Buscar libros mágicos...">
+                    <button id="search-button"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-section">
+                    <h2 class="nav-title">
+                        <i class="fas fa-book-open"></i>
+                        Categorías
+                    </h2>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-dragon"></i>
+                                Cuentos de Fantasía
+                                <span class="category-badge">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-laugh-beam"></i>
+                                Historias Divertidas
+                                <span class="category-badge">8</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-graduation-cap"></i>
+                                Educativos
+                                <span class="category-badge">15</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-paw"></i>
+                                Animales
+                                <span class="category-badge">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h2 class="nav-title">
+                        <i class="fas fa-star"></i>
+                        Más Populares
+                    </h2>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-book"></i>
+                                El Grúfalo
+                                <div class="reading-level">
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-book"></i>
+                                La oruga hambrienta
+                                <div class="reading-level">
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-book"></i>
+                                El pez Arcoíris
+                                <div class="reading-level">
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                    <i class="fas fa-star star"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h2 class="nav-title">
+                        <i class="fas fa-tools"></i>
+                        Herramientas
+                    </h2>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-bookmark"></i>
+                                Mis Favoritos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-history"></i>
+                                Historial de Lectura
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-award"></i>
+                                Mis Logros
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <!-- Contenedor de los libros -->
+            <div class="biblioteca-container" id="biblioteca">
+                <!-- Los libros se agregarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <h2 id="modal-titulo"></h2>
+                <p id="modal-resumen"></p>
+                <button class="boton-descarga" id="modal-descarga">Descargar Libro</button>
+            </div>
         </div>
     </div>
 
-  </div>
-
-  <script src="libros.js"></script>
-  <script src="main.js"></script>
-  <script src="script.js"></script>
+    <script src="libros.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
